@@ -7,6 +7,7 @@
 /* VARIÁVEIS DARK MODE */
 :root {
   --text-color: white;
+  --text-weight: bold;
   --bg-img: url(./assets/assets/bg-desktop.jpg);
   --switch-btn: url(./assets/assets/moon-stars.svg);
   --border-btn: rgba(255, 255, 255, 0.5);
@@ -23,6 +24,7 @@
 
 .light {
   --text-color: black;
+  --text-weight: bold;
   --bg-img: url(./assets/assets/bg-desktop-light.jpg);
   --switch-btn: url(./assets/assets/sun.svg);
   --border-btn-hover:rgba(0, 0, 0, 0.10);
@@ -45,6 +47,7 @@ body {
 body * {
   font-family: 'Inter', sans-serif;
   color: var(--text-color);
+  font-weight: var(--text-weight);
 }
 
 #container {
@@ -65,7 +68,7 @@ body * {
 }
 
 #profile p {
-  font-weight: 500;
+  font-weight: bold;
   line-height: 24px;
   padding-top: 8px;
 }
@@ -82,7 +85,7 @@ body * {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: white var(--switch-btn) no-repeat center;
+  background: rgb(255, 255, 255) var(--switch-btn) no-repeat center;
 
   position: absolute;
   top: 50%;
@@ -165,8 +168,11 @@ ul li a:hover {
 
 footer {
   text-align: center;
+  font-size: 12px;
 }
 
+
+/* Animation button */
 @keyframes slide-in{
   from{
     left: 0;
@@ -185,6 +191,8 @@ footer {
   }
 }
 
+
+/* Responsive */
 @media (max-width: 320px){
   :root{
     --bg-img: url(./assets/assets/bg-mobile.jpg);
